@@ -1,0 +1,40 @@
+<svg width="1200" height="150" viewBox="0 0 1200 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="名言轮播">
+  <rect x="2" y="2" width="1196" height="146" rx="14" fill="#0D1117" stroke="#1F2937" stroke-width="1"/>
+  <text x="70" y="66" font-family="Georgia, serif" font-size="64" fill="#67E8F9" opacity="0.5">“</text>
+
+  <g font-family="'Songti SC', Georgia, serif" font-size="22" fill="#E6EDF3" text-anchor="middle" font-style="italic">
+    <text x="600" y="68" opacity="0">
+      任何足够先进的技术，皆与魔法无异。
+      <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.04;0.21;0.25;1" dur="24s" begin="0s" repeatCount="indefinite"/>
+    </text>
+    <text x="600" y="68" opacity="0">
+      Talk is cheap. Show me the code.
+      <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.04;0.21;0.25;1" dur="24s" begin="-18s" repeatCount="indefinite"/>
+    </text>
+    <text x="600" y="68" opacity="0">
+      Simplicity is the soul of efficiency.
+      <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.04;0.21;0.25;1" dur="24s" begin="-12s" repeatCount="indefinite"/>
+    </text>
+    <text x="600" y="68" opacity="0">
+      写代码是热爱，写到世界充满爱。
+      <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.04;0.21;0.25;1" dur="24s" begin="-6s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+  <g font-family="Georgia, serif" font-size="15" fill="#8B949E" text-anchor="middle">
+    <text x="600" y="105" opacity="0">— Arthur C. Clarke
+      <animate attributeName="opacity" values="0;0.9;0.9;0;0" keyTimes="0;0.04;0.21;0.25;1" dur="24s" begin="0s" repeatCount="indefinite"/>
+    </text>
+    <text x="600" y="105" opacity="0">— Linus Torvalds
+      <animate attributeName="opacity" values="0;0.9;0.9;0;0" keyTimes="0;0.04;0.21;0.25;1" dur="24s" begin="-18s" repeatCount="indefinite"/>
+    </text>
+    <text x="600" y="105" opacity="0">— Austin Freeman
+      <animate attributeName="opacity" values="0;0.9;0.9;0;0" keyTimes="0;0.04;0.21;0.25;1" dur="24s" begin="-12s" repeatCount="indefinite"/>
+    </text>
+    <text x="600" y="105" opacity="0">— DIYgod
+      <animate attributeName="opacity" values="0;0.9;0.9;0;0" keyTimes="0;0.04;0.21;0.25;1" dur="24s" begin="-6s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+  <text x="1130" y="120" font-family="Georgia, serif" font-size="52" fill="#67E8F9" opacity="0.5">”</text>
+</svg>

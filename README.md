@@ -5,8 +5,7 @@
 
   <br/>
 
-  ![Profile views](https://komarev.com/ghpvc/?username=Hush-xv&color=0891B2&style=for-the-badge&label=%E4%B8%BB%E9%A1%B5%E8%AE%BF%E9%97%AE)
-  [![GitHub](https://img.shields.io/badge/GitHub-Hush--xv-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Hush-xv)
+  ![Profile views](https://komarev.com/ghpvc/?username=Hush-xv&color=0891B2&style=for-the-badge&label=Profile%20views) &nbsp;&nbsp; [![GitHub](https://img.shields.io/badge/GitHub-Hush--xv-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Hush-xv)
 </div>
 
 ## 🧭 关于我
@@ -65,7 +64,7 @@
 ## 💬 今日一句
 
 <div align="center">
-<img src="assets/quote.png" alt="quote"/>
+<img src="assets/quote.svg" alt="quote"/>
 </div>
 
 <div align="center">

@@ -47,7 +47,6 @@ jobs:
               || { echo "::warning::fetch failed: $2"; rm -f "assets/$2.tmp"; }
           }
           fetch "https://streak-stats.demolab.com?user=Hush-xv&hide_border=true&background=0D1117&ring=0891B2&currStreakLabel=67E8F9&sideLabels=A5F3FC&dates=C9D1D9&currStreakNum=C9D1D9&sideNums=C9D1D9" streak.svg
-          fetch "https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark" quote.png
 
       - name: Rebase over metrics own commit
         run: |

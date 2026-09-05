@@ -29,8 +29,6 @@ jobs:
           base: header, activity, community, repositories, metadata
           config_display: large
           config_theme: dark
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: full-year
 
       - name: Render metrics card (light)
         uses: lowlighter/metrics@latest
@@ -42,8 +40,6 @@ jobs:
           base: header, activity, community, repositories, metadata
           config_display: large
           config_theme: light
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: full-year
 
       - name: Fetch streak cards (dark + light)
         run: |

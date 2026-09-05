@@ -70,13 +70,19 @@ curiosity ███████████████████████�
 ## 🏙 3D 贡献城市
 
 <div align="center">
-<img src="profile-3d-contrib/profile-season-animate.svg" width="100%" alt="3d contributions"/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="profile-3d-contrib/profile-night-rainbow.svg" />
+  <img src="profile-3d-contrib/profile-season-animate.svg" width="100%" alt="3d contributions"/>
+</picture>
 </div>
 
 ## 🛠 常用技术
 
 <div align="center">
-<a href="https://astro.build" target="_blank"><img src="https://skillicons.dev/icons?i=astro,ts,js,html,css,git,github,md,vscode,nodejs&perline=10" alt="tech stack"/></a>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=astro,ts,js,html,css,git,github,md,vscode,nodejs&perline=10&theme=dark" />
+  <img src="https://skillicons.dev/icons?i=astro,ts,js,html,css,git,github,md,vscode,nodejs&perline=10&theme=light" alt="tech stack"/>
+</picture>
 </div>
 
 ## 💬 今日一句

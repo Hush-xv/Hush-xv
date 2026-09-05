@@ -19,28 +19,16 @@
 
 ## 🏆 成就墙
 
-<div align="center">
-<img src="assets/trophy.svg" width="100%" alt="trophies"/>
-</div>
+> 🚧 奖杯服务限流中，恢复后回来
 
 ## 📊 GitHub 统计
 
 <div align="center">
-<table>
-  <tr>
-    <td><img src="assets/stats.svg" alt="GitHub stats"/></td>
-    <td><img src="assets/langs.svg" alt="Top langs"/></td>
-  </tr>
-  <tr>
-    <td colspan="2"><img src="assets/streak.svg" alt="GitHub streak"/></td>
-  </tr>
-</table>
+<img src="assets/metrics.svg" width="100%" alt="metrics"/>
 </div>
 
-## 📈 活跃度
-
 <div align="center">
-<img src="assets/activity.svg" width="100%" alt="activity graph"/>
+<img src="assets/streak.svg" alt="GitHub streak"/>
 </div>
 
 ## 🐍 贪吃蛇

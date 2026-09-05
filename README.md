@@ -39,7 +39,7 @@
 ## 🏙 3D 贡献城市
 
 <div align="center">
-<img src="assets/profile-3d-contrib/profile-night-rainbow.svg" width="100%" alt="3d contributions"/>
+<img src="profile-3d-contrib/profile-season-animate.svg" width="100%" alt="3d contributions"/>
 </div>
 
 ## 🛠 常用技术

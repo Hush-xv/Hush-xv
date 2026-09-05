@@ -1,0 +1,37 @@
+name: Render stat cards
+
+on:
+  schedule:
+    - cron: "0 3 * * *" # 每天 UTC 3 点刷新卡片
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [".github/workflows/render-cards.yml"]
+
+permissions:
+  contents: write
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch cards from public services
+        run: |
+          mkdir -p assets
+          fetch() {
+            curl -fsSL --retry 3 --retry-delay 5 -o "assets/$2.tmp" "$1" \
+              && mv "assets/$2.tmp" "assets/$2" \
+              || { echo "::warning::fetch failed: $2"; rm -f "assets/$2.tmp"; }
+          }
+          fetch "https://github-profile-trophy.vercel.app/?username=Hush-xv&theme=discord&no-frame=true&row=1&column=6&margin-w=8" trophy.svg
+          fetch "https://github-readme-stats.vercel.app/api?username=Hush-xv&show_icons=true&hide_border=true&bg_color=0D1117&title_color=67E8F9&icon_color=67E8F9&text_color=C9D1D9&include_all_commits=true" stats.svg
+          fetch "https://github-readme-stats.vercel.app/api/top-langs/?username=Hush-xv&layout=compact&hide_border=true&bg_color=0D1117&title_color=67E8F9&text_color=C9D1D9&langs_count=8" langs.svg
+          fetch "https://streak-stats.demolab.com?user=Hush-xv&hide_border=true&background=0D1117&ring=0891B2&currStreakLabel=67E8F9&sideLabels=A5F3FC&dates=C9D1D9&currStreakNum=C9D1D9&sideNums=C9D1D9" streak.svg
+          fetch "https://github-readme-activity-graph.vercel.app/graph?username=Hush-xv&bg_color=0D1117&color=A5F3FC&line=0891B2&point=67E8F9&area=true&area_color=1E3A8A&hide_border=true" activity.svg
+          fetch "https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark" quote.png
+
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: refresh stat cards"

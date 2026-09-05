@@ -1,0 +1,34 @@
+name: Refresh banner wallpaper
+
+on:
+  schedule:
+    - cron: "0 21 * * *" # 每天 UTC 21 点（北京时间 5 点）换一张
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      - name: Pick wallpaper and crop banner
+        run: node scripts/refresh-banner.mjs
+
+      - name: Rebase over remote updates
+        run: |
+          git checkout -- . || true
+          git pull --rebase origin main
+
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: refresh banner wallpaper (wallhaven)"

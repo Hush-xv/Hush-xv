@@ -1,0 +1,24 @@
+{
+  "name": "github-profile",
+  "version": "1.0.0",
+  "description": "<div align=\"center\">\r   <img width=\"100%\" src=\"assets/banner.svg\" alt=\"banner\"/>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hush-xv/Hush-xv.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Hush-xv/Hush-xv/issues"
+  },
+  "homepage": "https://github.com/Hush-xv/Hush-xv#readme",
+  "devDependencies": {
+    "sharp": "^0.35.4"
+  }
+}

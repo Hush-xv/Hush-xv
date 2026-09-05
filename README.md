@@ -1,5 +1,6 @@
 <div align="center">
-  <img width="100%" src="assets/banner.svg" alt="banner"/>
+  <img width="100%" src="assets/banner.jpg" alt="banner"/>
+  <sub>🖼 banner 来自 wallhaven.cc · 每天自动更换</sub>
 
   <a href="https://github.com/Hush-xv"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1200&color=67E8F9&center=true&vCenter=true&random=false&width=560&lines=%F0%9F%91%8B+Hey%2C+I'm+Hush-xv%3B%E2%9C%A6+%E8%AE%B0%E5%BD%95%E6%8A%80%E6%9C%AF%E4%B8%8E%E7%94%9F%E6%B4%BB+%E2%9C%A6%3BKeep+Building%2C+Keep+Shipping" alt="typing"/></a>
 

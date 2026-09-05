@@ -29,6 +29,14 @@ jobs:
           config_timezone: Asia/Shanghai
           base: header, activity, community, repositories, metadata
           config_display: large
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+
+      - name: Render 3D contribution city
+        uses: yoshi389111/github-profile-3d-contrib@0.7.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: Hush-xv
 
       - name: Fetch streak & quote from public services
         run: |

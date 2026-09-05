@@ -1,5 +1,5 @@
 <div align="center">
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:1E3A8A,50:0891B2,100:67E8F9&height=200&section=header&text=Hush-xv&fontSize=64&fontColor=ffffff&animation=fadeIn&desc=%E8%AE%B0%E5%BD%95%E6%8A%80%E6%9C%AF%E4%B8%8E%E7%94%9F%E6%B4%BB&descSize=20&descAlignY=72" alt="banner"/>
+  <img width="100%" src="assets/banner.svg" alt="banner"/>
 
   <a href="https://github.com/Hush-xv"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1200&color=67E8F9&center=true&vCenter=true&random=false&width=560&lines=%F0%9F%91%8B+Hey%2C+I'm+Hush-xv%3B%E2%9C%A6+%E8%AE%B0%E5%BD%95%E6%8A%80%E6%9C%AF%E4%B8%8E%E7%94%9F%E6%B4%BB+%E2%9C%A6%3BKeep+Building%2C+Keep+Shipping" alt="typing"/></a>
 
@@ -34,6 +34,12 @@
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Hush-xv/Hush-xv/output/github-contribution-grid-snake-dark.svg" />
   <img src="https://raw.githubusercontent.com/Hush-xv/Hush-xv/output/github-contribution-grid-snake.svg" width="100%" alt="contribution snake"/>
 </picture>
+</div>
+
+## 🏙 3D 贡献城市
+
+<div align="center">
+<img src="assets/profile-3d-contrib/profile-night-rainbow.svg" width="100%" alt="3d contributions"/>
 </div>
 
 ## 🛠 常用技术

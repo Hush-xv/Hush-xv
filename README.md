@@ -1,5 +1,7 @@
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:1E3A8A,50:0891B2,100:67E8F9&height=200&section=header&text=Hush-xv&fontSize=64&fontColor=ffffff&animation=fadeIn&desc=%E8%AE%B0%E5%BD%95%E6%8A%80%E6%9C%AF%E4%B8%8E%E7%94%9F%E6%B4%BB&descSize=20&descAlignY=72" alt="banner"/>
 
+![Profile views](https://komarev.com/ghpvc/?username=Hush-xv&color=0891B2&style=for-the-badge&label=%E4%B8%BB%E9%A1%B5%E8%AE%BF%E9%97%AE)
+
 ## 🧭 关于我
 
 - 🔭 折腾 Web、嵌入式与各种好玩的小工具
@@ -20,6 +22,10 @@
 
 > 由 GitHub Actions 每天自动从[博客 RSS](https://hush-xv.github.io/rss.xml) 同步。
 
+## 🏆 成就墙
+
+<img src="https://github-profile-trophy.vercel.app/?username=Hush-xv&theme=discord&no-frame=true&row=1&column=6&margin-w=8" width="100%" alt="trophies"/>
+
 ## 📊 GitHub 统计
 
 <table>
@@ -32,9 +38,26 @@
   </tr>
 </table>
 
+## 📈 活跃度
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Hush-xv&bg_color=0D1117&color=A5F3FC&line=0891B2&point=67E8F9&area=true&area_color=1E3A8A&hide_border=true" width="100%" alt="activity graph"/>
+
+## 🐍 贪吃蛇
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Hush-xv/Hush-xv/output/github-contribution-grid-snake-dark.svg" />
+  <img src="https://raw.githubusercontent.com/Hush-xv/Hush-xv/output/github-contribution-grid-snake.svg" width="100%" alt="contribution snake"/>
+</picture>
+
 ## 🛠 常用技术
 
 <a href="https://astro.build" target="_blank"><img src="https://skillicons.dev/icons?i=astro,ts,js,html,css,git,github,md,vscode,nodejs&perline=10" alt="tech stack"/></a>
+
+## 📌 精选仓库
+
+<a href="https://github.com/Hush-xv/Hush-xv.github.io">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Hush-xv&repo=Hush-xv.github.io&hide_border=true&bg_color=0D1117&title_color=67E8F9&text_color=C9D1D9" alt="blog repo"/>
+</a>
 
 ## 🌐 找到我
 

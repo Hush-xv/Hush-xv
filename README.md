@@ -12,6 +12,10 @@
 ## 📝 最新博文
 
 <!-- BLOG-POST-LIST:START -->
+- [Git 实战手册（三）：撤销、急救与速查表](https://hush-xv.github.io/posts/git-handbook-03/)
+- [Git 实战手册（二）：分支、远程与团队协作](https://hush-xv.github.io/posts/git-handbook-02/)
+- [Git 实战手册（一）：从零到日常上手](https://hush-xv.github.io/posts/git-handbook-01/)
+- [你好，世界](https://hush-xv.github.io/posts/hello-world/)
 <!-- BLOG-POST-LIST:END -->
 
 > 由 GitHub Actions 每天自动从[博客 RSS](https://hush-xv.github.io/rss.xml) 同步。

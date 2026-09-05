@@ -19,26 +19,33 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Render metrics card (self-hosted, no third-party limit)
+      - name: Render metrics card (dark)
         uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           user: Hush-xv
           filename: assets/metrics.svg
-          committer_token: ${{ secrets.GITHUB_TOKEN }}
           config_timezone: Asia/Shanghai
           base: header, activity, community, repositories, metadata
           config_display: large
+          config_theme: dark
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
 
-      - name: Render 3D contribution city
-        uses: yoshi389111/github-profile-3d-contrib@0.7.1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          USERNAME: Hush-xv
+      - name: Render metrics card (light)
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          user: Hush-xv
+          filename: assets/metrics-light.svg
+          config_timezone: Asia/Shanghai
+          base: header, activity, community, repositories, metadata
+          config_display: large
+          config_theme: light
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
 
-      - name: Fetch streak & quote from public services
+      - name: Fetch streak cards (dark + light)
         run: |
           mkdir -p assets
           fetch() {
@@ -47,8 +54,9 @@ jobs:
               || { echo "::warning::fetch failed: $2"; rm -f "assets/$2.tmp"; }
           }
           fetch "https://streak-stats.demolab.com?user=Hush-xv&hide_border=true&background=0D1117&ring=0891B2&currStreakLabel=67E8F9&sideLabels=A5F3FC&dates=C9D1D9&currStreakNum=C9D1D9&sideNums=C9D1D9" streak.svg
+          fetch "https://streak-stats.demolab.com?user=Hush-xv&hide_border=true&background=FFFFFF&ring=0891B2&currStreakLabel=0891B2&sideLabels=57606A&dates=57606A&currStreakNum=24292F&sideNums=24292F" streak-light.svg
 
-      - name: Rebase over metrics own commit
+      - name: Rebase over remote updates
         run: |
           git checkout -- . || true
           git pull --rebase origin main

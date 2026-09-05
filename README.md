@@ -45,11 +45,17 @@ curiosity ███████████████████████�
 ## 📊 GitHub 统计
 
 <div align="center">
-<img src="assets/metrics.svg" width="100%" alt="metrics"/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/metrics.svg" />
+  <img src="assets/metrics-light.svg" width="100%" alt="metrics"/>
+</picture>
 </div>
 
 <div align="center">
-<img src="assets/streak.svg" alt="GitHub streak"/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/streak.svg" />
+  <img src="assets/streak-light.svg" alt="GitHub streak"/>
+</picture>
 </div>
 
 ## 🐍 贪吃蛇

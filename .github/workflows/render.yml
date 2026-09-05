@@ -1,0 +1,92 @@
+name: Render profile assets
+
+on:
+  schedule:
+    - cron: "0 3 * * *" # 每天 UTC 3 点（北京 11 点）全量刷新
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/render.yml"
+      - "scripts/**"
+      - "README.md"
+
+permissions:
+  contents: write
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      - name: Metrics card (dark)
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          user: Hush-xv
+          filename: dist/assets/metrics.svg
+          config_timezone: Asia/Shanghai
+          base: header, activity, community, repositories, metadata
+          config_display: large
+          config_theme: dark
+
+      - name: Metrics card (light)
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          user: Hush-xv
+          filename: dist/assets/metrics-light.svg
+          config_timezone: Asia/Shanghai
+          base: header, activity, community, repositories, metadata
+          config_display: large
+          config_theme: light
+
+      - name: Streak cards (dark + light)
+        run: |
+          mkdir -p dist/assets
+          fetch() {
+            curl -fsSL --retry 3 --retry-delay 5 -o "dist/assets/$2.tmp" "$1" \
+              && mv "dist/assets/$2.tmp" "dist/assets/$2" \
+              || { echo "::warning::fetch failed: $2"; rm -f "dist/assets/$2.tmp"; }
+          }
+          fetch "https://streak-stats.demolab.com?user=Hush-xv&hide_border=true&background=0D1117&ring=0891B2&currStreakLabel=67E8F9&sideLabels=A5F3FC&dates=C9D1D9&currStreakNum=C9D1D9&sideNums=C9D1D9" streak.svg
+          fetch "https://streak-stats.demolab.com?user=Hush-xv&hide_border=true&background=FFFFFF&ring=0891B2&currStreakLabel=0891B2&sideLabels=57606A&dates=57606A&currStreakNum=24292F&sideNums=24292F" streak-light.svg
+
+      - name: Banner (random wallhaven toplist)
+        run: node scripts/refresh-banner.mjs && mkdir -p dist/assets && mv assets/banner.jpg dist/assets/banner.jpg
+
+      - name: Contribution snake (themed)
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: Hush-xv
+          outputs: |
+            dist/github-contribution-grid-snake.svg?color_snake=%23F0ABFC&color_dots=%23E4EDEF,%239BE9A8,%2340C463,%2330A14E,%23216E39
+            dist/github-contribution-grid-snake-dark.svg?color_snake=%23F0ABFC&color_dots=%2316324F,%231D4ED8,%230891B2,%2322D3EE,%2367E8F9
+
+      - name: 3D contribution city
+        uses: yoshi389111/github-profile-3d-contrib@0.7.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: Hush-xv
+
+      - name: Collect wanted 3D variants
+        run: |
+          mkdir -p dist/profile-3d-contrib
+          cp profile-3d-contrib/profile-night-rainbow.svg dist/profile-3d-contrib/
+          cp profile-3d-contrib/profile-season-animate.svg dist/profile-3d-contrib/
+
+      # 全部资产强制推送到无历史的 output 分支，main 不膨胀
+      - uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

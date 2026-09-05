@@ -1,1 +1,7 @@
 .mimosa/
+node_modules/
+dist/
+profile-3d-contrib/
+assets/banner.jpg
+*.img
+wh.json

@@ -42,7 +42,9 @@ jobs:
           fetch "https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark" quote.png
 
       - name: Rebase over metrics own commit
-        run: git pull --rebase origin main
+        run: |
+          git checkout -- . || true
+          git pull --rebase origin main
 
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:

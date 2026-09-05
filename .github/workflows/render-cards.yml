@@ -41,8 +41,9 @@ jobs:
           fetch "https://streak-stats.demolab.com?user=Hush-xv&hide_border=true&background=0D1117&ring=0891B2&currStreakLabel=67E8F9&sideLabels=A5F3FC&dates=C9D1D9&currStreakNum=C9D1D9&sideNums=C9D1D9" streak.svg
           fetch "https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark" quote.png
 
+      - name: Rebase over metrics own commit
+        run: git pull --rebase origin main
+
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: refresh stat cards"
-          skip_fetch: false
-          git_pull_strategy: rebase

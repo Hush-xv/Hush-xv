@@ -69,5 +69,5 @@
 </div>
 
 <div align="center">
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:1E3A8A,50:0891B2,100:67E8F9&height=120&section=footer" alt="footer"/>
+<img width="100%" src="assets/footer.svg" alt="footer"/>
 </div>

@@ -18,8 +18,8 @@ jobs:
         with:
           github_user_name: Hush-xv
           outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+            dist/github-contribution-grid-snake.svg?color_snake=%23F0ABFC&color_dots=%2316324F,%231D4ED8,%230891B2,%2322D3EE,%2367E8F9
+            dist/github-contribution-grid-snake-dark.svg?color_snake=%23F0ABFC&color_dots=%2316324F,%231D4ED8,%230891B2,%2322D3EE,%2367E8F9
 
       - uses: crazy-max/ghaction-github-pages@v4
         with:

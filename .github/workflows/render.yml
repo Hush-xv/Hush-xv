@@ -33,10 +33,10 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           user: Hush-xv
           filename: dist/assets/metrics.svg
+          output_action: none
           config_timezone: Asia/Shanghai
           base: header, activity, community, repositories, metadata
           config_display: large
-          config_theme: dark
 
       - name: Metrics card (light)
         uses: lowlighter/metrics@latest
@@ -44,10 +44,13 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           user: Hush-xv
           filename: dist/assets/metrics-light.svg
+          output_action: none
           config_timezone: Asia/Shanghai
           base: header, activity, community, repositories, metadata
           config_display: large
-          config_theme: light
+          extras_css: |
+            * { color: #24292F !important; fill: #24292F !important }
+            svg { background-color: #FFFFFF !important }
 
       - name: Streak cards (dark + light)
         run: |

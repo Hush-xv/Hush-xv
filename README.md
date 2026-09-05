@@ -5,16 +5,28 @@
 
   <br/>
 
-  ![Profile views](https://komarev.com/ghpvc/?username=Hush-xv&color=0891B2&style=for-the-badge&label=Profile%20views) &nbsp;&nbsp; [![GitHub](https://img.shields.io/badge/GitHub-Hush--xv-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Hush-xv)
+  ![Profile views](https://komarev.com/ghpvc/?username=Hush-xv&color=0891B2&style=for-the-badge&label=Profile%20views) &nbsp; [![Followers](https://img.shields.io/github/followers/Hush-xv?style=for-the-badge&label=Followers&color=0891B2)](https://github.com/Hush-xv) &nbsp; [![GitHub](https://img.shields.io/badge/GitHub-Hush--xv-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Hush-xv)
 </div>
-
-## 🧭 关于我
 
 <div align="center">
-
-🔧 折腾 Web、嵌入式与各种好玩的小工具 &nbsp;·&nbsp; 🌱 正在学习前端工程化 &nbsp;·&nbsp; 💬 找我：GitHub Issue
-
+<h1>Hi，我是 Hush-xv 👋</h1>
+<p><b>🔧 Builder · 🌱 Learner · ✦ 记录技术与生活</b></p>
 </div>
+
+## 💻 终端
+
+```bash
+$ whoami
+Hush-xv — Web / 嵌入式 / 工具折腾者
+
+$ cat now.txt
+🌱 learning : 前端工程化
+🚀 building : GitHub 个人主页
+📦 shipping : 顺手把一切工具化
+
+$ uptime
+curiosity ██████████████████████████ 100%
+```
 
 <div align="center">
   <code><a href="https://astro.build"><img height="22" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/astro/astro-original.svg" alt="astro"/></a></code>

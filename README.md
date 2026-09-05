@@ -32,10 +32,7 @@ curiosity ███████████████████████�
 ## 📊 GitHub 统计
 
 <div align="center">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Hush-xv/Hush-xv/output/assets/metrics.svg" />
-  <img src="https://raw.githubusercontent.com/Hush-xv/Hush-xv/output/assets/metrics-light.svg" width="100%" alt="metrics"/>
-</picture>
+<img src="https://raw.githubusercontent.com/Hush-xv/Hush-xv/output/assets/metrics.svg" width="100%" alt="metrics"/>
 </div>
 
 <div align="center">
